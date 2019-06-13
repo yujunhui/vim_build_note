@@ -7,10 +7,10 @@
 ``` shell
 sudo apt-get remove -y vim vim-runtime gvim
 sudo apt-get remove -y vim-tiny vim-common vim-gui-common vim-nox
-sudo rm -rf '/usr/bin/vim*'
-sudo rm -rf '/usr/local/bin/vim*'
-sudo rm -rf '/usr/share/vim/vim*'
-sudo rm -rf '/usr/local/share/vim/vim*'
+sudo rm -rf /usr/bin/vim*
+sudo rm -rf /usr/local/bin/vim*
+sudo rm -rf /usr/share/vim/vim*
+sudo rm -rf /usr/local/share/vim/vim*
 ```
 
 2. 安装依赖
@@ -33,18 +33,18 @@ rm -rf '~/vim' && git clone https://github.com/vim/vim.git ~/vim
 ``` shell
 ./configure --with-features=huge \
             --enable-multibyte \
-	    --enable-rubyinterp=yes \
-	    --enable-pythoninterp=yes \
-	    --enable-python3interp=yes \
-	    --enable-perlinterp=yes \
-	    --enable-luainterp=yes \
+            --enable-rubyinterp=yes \
+            --enable-pythoninterp=yes \
+            --enable-python3interp=yes \
+            --enable-perlinterp=yes \
+            --enable-luainterp=yes \
             --enable-gui=gtk2 \
             --enable-cscope \
-	    --prefix=/usr
+            --prefix=/usr
 ```
 
-**NOTICE1:**  `--prefix=/usr` 是安装位置, 请自行斟酌. 
-**NOTICE2:**  可以使用 `./configure --help` 查看更多 configure 信息.
+**NOTICE1:**  `--prefix=/usr` 是安装位置, 请自行斟酌.  
+**NOTICE2:**  可以使用 `./configure --help` 查看更多 configure 信息.  
 **NOTICE3:** 网上很多教程有 `--with-python-config-dir=xxx` 和 `--with-python3-config-dir=xxx`, 但是已经 deprecated 了.
 
 5. make 
