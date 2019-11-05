@@ -57,3 +57,9 @@ make && sudo make install
 6. vim --version
 
 使用 `vim --version` 看看编译时间等.
+
+7. 使 vim 是默认编辑器
+
+``` shell
+sudo update-alternatives --install /usr/bin/editor editor /usr/bin/vim 100
+```
