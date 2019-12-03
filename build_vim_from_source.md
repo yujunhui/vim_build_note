@@ -5,12 +5,11 @@
 1. 删除之前装过的 vim, vi 等
 
 ``` shell
-sudo apt-get remove -y vim vim-runtime gvim
-sudo apt-get remove -y vim-tiny vim-common vim-gui-common vim-nox
-sudo rm -rf /usr/bin/vim*
-sudo rm -rf /usr/local/bin/vim*
-sudo rm -rf /usr/share/vim/vim*
-sudo rm -rf /usr/local/share/vim/vim*
+sudo apt-get remove -y vim vim-runtime gvim vim-tiny vim-common vim-gui-common vim-nox
+sudo rm -rf "/usr/bin/vim*"
+sudo rm -rf "/usr/local/bin/vim*"
+sudo rm -rf "/usr/share/vim/vim*"
+sudo rm -rf "/usr/local/share/vim/vim*"
 ```
 
 2. 安装依赖
@@ -25,7 +24,7 @@ python3-dev ruby-dev lua5.1 liblua5.1-dev libperl-dev git
 3. clone 源码
 
 ``` shell
-rm -rf '~/vim' && git clone https://github.com/vim/vim.git ~/vim
+rm -rf '~/vim' && git clone https://github.com/vim/vim.git --depth 1 ~/vim
 ```
 
 4. configure
@@ -47,7 +46,7 @@ rm -rf '~/vim' && git clone https://github.com/vim/vim.git ~/vim
 **NOTICE2:**  可以使用 `./configure --help` 查看更多 configure 信息.  
 **NOTICE3:** 网上很多教程有 `--with-python-config-dir=xxx` 和 `--with-python3-config-dir=xxx`, 但是已经 deprecated 了.
 
-5. make 
+5. make
 
 ``` shell
 make && sudo make install
