@@ -62,3 +62,9 @@ make && sudo make install
 ``` shell
 sudo update-alternatives --install /usr/bin/editor editor /usr/bin/vim 100
 ```
+
+查看编辑器
+
+``` shell
+update-alternatives --config editor
+```
