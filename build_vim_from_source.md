@@ -5,11 +5,13 @@
 1. 删除之前装过的 vim, vi 等
 
 ``` shell
+bash
 sudo apt-get remove -y vim vim-runtime gvim vim-tiny vim-common vim-gui-common vim-nox
 sudo rm -rf "/usr/bin/vim*"
 sudo rm -rf "/usr/local/bin/vim*"
 sudo rm -rf "/usr/share/vim/vim*"
 sudo rm -rf "/usr/local/share/vim/vim*"
+exit
 ```
 
 2. 安装依赖
