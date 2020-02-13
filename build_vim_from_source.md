@@ -7,10 +7,10 @@
 ``` shell
 bash
 sudo apt-get remove -y vim vim-runtime gvim vim-tiny vim-common vim-gui-common vim-nox
-sudo rm -rf "/usr/bin/vim*"
-sudo rm -rf "/usr/local/bin/vim*"
-sudo rm -rf "/usr/share/vim/vim*"
-sudo rm -rf "/usr/local/share/vim/vim*"
+sudo rm -rf /usr/bin/vim*
+sudo rm -rf /usr/local/bin/vim*
+sudo rm -rf /usr/share/vim/vim*
+sudo rm -rf /usr/local/share/vim/vim*
 exit
 ```
 
