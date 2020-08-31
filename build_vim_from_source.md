@@ -64,7 +64,7 @@ __找不到libpython.3.7m.a__ 这样的错误.
             --enable-rubyinterp=yes \
             --enable-pythoninterp=yes \
             --enable-python3interp=yes \
-            --with-python3-command=/usr/bin/python3.6 \
+            --with-python3-command=/usr/bin/python3.8 \
             --enable-perlinterp=yes \
             --enable-luainterp=yes \
             --enable-gui=gtk2 \
