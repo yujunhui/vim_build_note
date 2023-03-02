@@ -44,6 +44,12 @@ rm -rf '~/vim' && git clone https://github.com/vim/vim.git --depth 1 ~/vim
             --prefix=/usr
 ```
 
+one-line
+
+```shell
+./configure --with-features=huge --enable-multibyte --enable-rubyinterp=yes --enable-pythoninterp=yes --enable-python3interp=yes --enable-perlinterp=yes --enable-luainterp=yes --enable-gui=gtk2 --enable-cscope --prefix=/usr
+```
+
 __NOTICE1:__  `--prefix=/usr` 是安装位置, 请自行斟酌.  
 __NOTICE2:__  可以使用 `./configure --help` 查看更多 configure 信息.  
 __NOTICE3:__ 网上很多教程有 `--with-python-config-dir=xxx` 和 `--with-python3-config-dir=xxx`, 但是已经 deprecated 了.
